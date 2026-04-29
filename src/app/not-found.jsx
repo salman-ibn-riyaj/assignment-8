@@ -1,9 +1,10 @@
 // NotFound.jsx
+import Link from 'next/link';
 import React from 'react';
 
 const NotFound = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-peach-100 to-orange-100 flex items-center justify-center px-4">
+    <div className="min-h-[40vh] py-4 m-3 rounded-md bg-gradient-to-br from-pink-100 via-peach-100 to-orange-100 flex items-center justify-center px-4">
       <div className="text-center">
         {/* Cute Eye */}
         <div className="mb-8 flex justify-center">
@@ -27,12 +28,12 @@ const NotFound = () => {
           <span className="text-orange-400">Maybe it's having a peachy day somewhere else?</span>
         </p>
 
-        <button
-          onClick={() => window.location.href = '/'}
+        <Link href={'/'}><button
+        
           className="px-8 py-3 bg-pink-500 hover:bg-pink-600 text-white font-medium rounded-full transition-all duration-300 shadow-lg hover:shadow-xl active:scale-95"
         >
           Go Back Home
-        </button>
+        </button></Link>
       </div>
     </div>
   );
