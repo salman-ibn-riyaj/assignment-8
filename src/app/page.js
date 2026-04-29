@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import FourFeaturedCows from "@/components/FourFeaturedCows";
+import TopBreeds from "@/components/TopBreeds";
 import Image from "next/image";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <FourFeaturedCows></FourFeaturedCows>
+      <TopBreeds></TopBreeds>
     </div>
   );
 }
