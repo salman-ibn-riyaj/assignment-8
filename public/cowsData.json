@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural food.",
+    "image": "https://i.postimg.cc/example-cow1.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Australian Friesian Bull",
+    "type": "Cow",
+    "breed": "Friesian",
+    "price": 250000,
+    "weight": 450,
+    "age": 4,
+    "location": "Dhaka",
+    "description": "Big and healthy Friesian bull, perfect for Qurbani. Imported breed with excellent health.",
+    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 3,
+    "name": "Brahman Fattened Bull",
+    "type": "Cow",
+    "breed": "Brahman",
+    "price": 180000,
+    "weight": 350,
+    "age": 3,
+    "location": "Rajshahi",
+    "description": "Well-fattened Brahman bull raised on organic feed. Very calm and healthy.",
+    "image": "https://i.postimg.cc/example-cow3.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 4,
+    "name": "Deshi Khasir Boka",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 18000,
+    "weight": 22,
+    "age": 2,
+    "location": "Mymensingh",
+    "description": "Pure Black Bengal goat, healthy and active. Ideal for small family Qurbani.",
+    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Jamuna Pari Goat",
+    "type": "Goat",
+    "breed": "Jamuna Pari",
+    "price": 35000,
+    "weight": 40,
+    "age": 2,
+    "location": "Cumilla",
+    "description": "Large Jamuna Pari goat with good weight. Raised with proper care and nutritious food.",
+    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 6,
+    "name": "Deshi Fattened Camel",
+    "type": "Camel",
+    "breed": "Arabian",
+    "price": 600000,
+    "weight": 520,
+    "age": 5,
+    "location": "Chattogram",
+    "description": "Rare Arabian camel available for Qurbani. Perfectly healthy and well-maintained.",
+    "image": "https://i.postimg.cc/example-camel1.jpg",
+    "category": "Large Animal"
+  }
+]
