@@ -23,6 +23,7 @@ const NotFound = () => {
         <h1 className="text-7xl font-bold text-pink-500 mb-2 tracking-tighter">404</h1>
         <h2 className="text-3xl font-medium text-gray-700 mb-4">Oops! Page not found</h2>
         
+        
         <p className="text-gray-600 mb-8 max-w-md mx-auto">
           Looks like this page wandered off... 
           <span className="text-orange-400">Maybe it's having a peachy day somewhere else?</span>
