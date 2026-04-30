@@ -36,7 +36,7 @@ const BookingForm = () => {
       </TextField>
       <div className="flex gap-2">
         <Toast.Provider />
-        <Button onPress={() => toast("Booking Success")} type="submit">
+        <Button onPress={() => toast.success("Booking Success")} type="submit">
           <Check />
           Submit
         </Button>

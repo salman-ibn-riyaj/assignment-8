@@ -58,8 +58,8 @@ const Navbar = () => {
         </ul>
 
         <div className="">
-            <Button className={'mr-4'}>Login</Button>
-            <Button variant="danger-soft">Register</Button>
+            <Link href="/login"><Button className={'mr-4'}>Login</Button></Link>
+            <Link href="/register"><Button variant="danger-soft">Register</Button></Link>
         </div>
       </header>
       {isMenuOpen && (

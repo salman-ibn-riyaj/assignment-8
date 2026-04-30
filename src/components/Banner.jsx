@@ -8,7 +8,7 @@ const Banner = () => {
       style={{ backgroundImage: "url('/banner.avif')" }}
     >
       <div  className="flex flex-col">
-        <p className=" p-1 pt-50 text-black font-bold text-4xl">
+        <p className=" p-1 pt-50 text-black text-center font-bold text-4xl">
           QurbaniHat – Livestock Booking Platform
         </p>
 

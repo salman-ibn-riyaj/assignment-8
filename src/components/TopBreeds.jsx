@@ -19,6 +19,9 @@ const TopBreeds = () => {
             <h3 className="text-2xl font-bold">100K</h3>
           </div>
         </div>
+        <div className="pt-12">
+            <hr/>
+        </div>
       </div>
     </>
   );
