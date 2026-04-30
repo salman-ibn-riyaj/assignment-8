@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h2 className="text-xl font-bold mb-5">Social Links</h2>
+          <h2 className="text-xl font-bold mb-5">Contact info</h2>
 
           <div>
             <p>Email: salmanibnriyaj@gmail.com</p>
