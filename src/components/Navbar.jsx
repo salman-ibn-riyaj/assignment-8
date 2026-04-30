@@ -131,6 +131,11 @@ const Navbar = () => {
                 All Animals
               </Link>
             </li>
+            <li>
+              <Link href="/my-profile" className="block py-2">
+                My Profile
+              </Link>
+            </li>
           </ul>
         </div>
       )}
