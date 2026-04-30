@@ -30,7 +30,7 @@ const BookingForm = () => {
         <FieldError />
       </TextField>
       <TextField isRequired minLength={8} name="address" type="text">
-        <Label>Phone</Label>
+        <Label>Address</Label>
         <Input placeholder="Enter your address" />
         <FieldError />
       </TextField>
