@@ -55,6 +55,9 @@ const Navbar = () => {
           <li>
             <Link className={pathName==='/all-animals'?'text-purple-500 font-bold':''} href="/all-animals">All Animals</Link>
           </li>
+          <li>
+            <Link className={pathName==='/my-profile'?'text-purple-500 font-bold':''} href="/my-profile">My Profile</Link>
+          </li>
         </ul>
 
         <div className="">

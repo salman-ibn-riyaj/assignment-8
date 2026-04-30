@@ -39,6 +39,12 @@ const RegisterPage = () => {
         alert('sign in failed ' + error.message);
     }
   };
+
+  const handleGoogleSignIn = async () => {
+  const data = await authClient.signIn.social({
+    provider: "google",
+  });
+};
   return (
     <div className="my-4 p-4">
       <h2 className="text-2xl font-bold my-4">Register Here</h2>
@@ -118,7 +124,7 @@ const RegisterPage = () => {
       </Form>
       <div className="my-4">
         <span className="mr-4">OR</span>
-        <Button variant="secondary">Log in With Google</Button>
+        <Button onClick={handleGoogleSignIn} variant="secondary">Log in With Google</Button>
       </div>
     </div>
   );

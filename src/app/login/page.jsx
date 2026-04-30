@@ -26,12 +26,18 @@ const LoginPage = () => {
       rememberMe: true,
       callbackURL: "/",
     });
-    if(data){
-        toast.success('Log in success');
+    if (data) {
+      toast.success("Log in success");
     }
-    if(error){
-        alert('Log in failed '+error.message);
+    if (error) {
+      alert("Log in failed " + error.message);
     }
+  };
+
+  const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
   };
   return (
     <div className="my-10 p-4">
@@ -93,7 +99,9 @@ const LoginPage = () => {
 
       <div className="my-4">
         <span className="mr-4">OR</span>
-        <Button variant="secondary">Log in With Google</Button>
+        <Button onClick={handleGoogleSignIn} variant="secondary">
+          Log in With Google
+        </Button>
       </div>
     </div>
   );
