@@ -1,31 +1,35 @@
-import { Avatar, Card } from "@heroui/react";
+'use client'
+import { useSession } from "@/lib/auth-client";
+import { Avatar, Button, Card } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const MyProfilePage = () => {
+
+    const session = useSession();
+    console.log(session);
+    const user = session?.data?.user;
+    console.log(user);
+
   return (
     <div className="my-12">
-      <Card className="mx-auto">
+      <Card className="">
         <Image
           height={300}
           width={300}
           alt="Indie Hackers community"
-          className="pointer-events-none aspect-square w-14 rounded-2xl object-cover select-none"
+          className="pointer-events-none aspect-square rounded-2xl object-cover select-none"
           loading="lazy"
-          src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/demo1.jpg"
+          src={user?.image || null}
         />
+        
+        {user && <span className="text-green-400 font-bold text-xs">Logged In</span>}
         <Card.Header>
-          <Card.Title>Indie Hackers</Card.Title>
-          <Card.Description>148 members</Card.Description>
+          <Card.Title className="text-2xl font-bold">{user?.name}</Card.Title>
+          <Card.Description>{user?.email}</Card.Description>
         </Card.Header>
         <Card.Footer className="flex gap-2">
-          <Avatar aria-label="Martha's profile picture" className="size-5">
-            <Avatar.Image
-              alt="Martha's avatar"
-              src="https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/avatars/red.jpg"
-            />
-            <Avatar.Fallback className="text-xs">IH</Avatar.Fallback>
-          </Avatar>
-          <span className="text-xs">By Martha</span>
+          <Link href={'/user-update'}><Button>User Update</Button></Link>
         </Card.Footer>
       </Card>
     </div>

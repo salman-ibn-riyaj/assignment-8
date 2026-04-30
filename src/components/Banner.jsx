@@ -1,5 +1,6 @@
 import { Button } from "@heroui/react";
 import Link from "next/link";
+import 'animate.css';
 
 const Banner = () => {
   return (
@@ -16,7 +17,7 @@ const Banner = () => {
           <Link href={"/all-animals"}>
             <Button
               className={
-                "bg-fuchsia-500 text-black text-center font-bold mx-auto"
+                "bg-fuchsia-500 text-black text-center font-bold mx-auto animate__animated animate__bounce"
               }
             >
               Browse All Cows
