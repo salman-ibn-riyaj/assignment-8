@@ -1,4 +1,5 @@
 "use client";
+import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import {
   Button,
@@ -9,16 +10,38 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import { router } from "better-auth/api";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 const RegisterPage = () => {
-  const onSubmit = (e) => {
+    const router = useRouter();
+  const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
+
+    const userData = Object.fromEntries(formData.entries());
+    console.log(userData);
+
+    const { data, error } = await authClient.signUp.email({
+      name: userData.name, // required
+      email: userData.email, // required
+      password: userData.password, // required
+      image: userData.image,
+    });
+
+    if(data){
+        toast.success('Sign in success');
+        router.push('/login')
+    }
+    if(error){
+        alert('sign in failed ' + error.message);
+    }
   };
   return (
-    <div className="my-4">
-
-        <h2 className="text-2xl font-bold my-4">Register Here</h2>
+    <div className="my-4 p-4">
+      <h2 className="text-2xl font-bold my-4">Register Here</h2>
       <Form className="flex w-96 flex-col gap-4" onSubmit={onSubmit}>
         <TextField
           isRequired
@@ -31,7 +54,12 @@ const RegisterPage = () => {
           }}
         >
           <Label>Name</Label>
-          <Input placeholder="John Doe" />
+          <Input placeholder="Enter Your Name" />
+          <FieldError />
+        </TextField>
+        <TextField isRequired name="image">
+          <Label>Image Url</Label>
+          <Input placeholder="Enter Your Url" />
           <FieldError />
         </TextField>
         <TextField
@@ -46,7 +74,7 @@ const RegisterPage = () => {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input placeholder="Enter Your Email" />
           <FieldError />
         </TextField>
         <TextField
@@ -77,13 +105,21 @@ const RegisterPage = () => {
         <div className="flex gap-2">
           <Button type="submit">
             <Check />
-            Submit
+            Register
           </Button>
-          <Button type="reset" variant="secondary">
-            Reset
-          </Button>
+
+          <Link href={"/login"}>
+            <Button>
+              <Check />
+              Login
+            </Button>
+          </Link>
         </div>
       </Form>
+      <div className="my-4">
+        <span className="mr-4">OR</span>
+        <Button variant="secondary">Log in With Google</Button>
+      </div>
     </div>
   );
 };
