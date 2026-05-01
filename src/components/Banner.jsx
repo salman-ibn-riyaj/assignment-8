@@ -4,12 +4,12 @@ import 'animate.css';
 
 const Banner = () => {
   return (
+    
     <div
-      className=" h-100 bg-cover bg-center rounded-md flex-col space-y-6"
-      style={{ backgroundImage: "url('/banner.avif')" }}
+      className="bg-[linear-gradient(to_right,rgba(6,182,212,0.5),rgba(248,113,113,0.5)),url('/banner.avif')] h-100 bg-cover bg-center rounded-md flex flex-col space-y-6"
     >
       <div  className="flex flex-col">
-        <p className=" p-1 pt-50 text-black text-center font-bold text-4xl">
+        <p className=" p-1 pt-50 text-white text-center font-bold text-6xl">
           QurbaniHat – Livestock Booking Platform
         </p>
 
@@ -17,7 +17,7 @@ const Banner = () => {
           <Link href={"/all-animals"}>
             <Button
               className={
-                "bg-fuchsia-500 text-black text-center font-bold mx-auto animate__animated animate__bounce"
+                "bg-fuchsia-500 text-white text-center font-bold mx-auto animate__animated animate__backInLeft mt-2"
               }
             >
               Browse All Cows
