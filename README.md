@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐄 QurbaniHat – Livestock Booking Platform
 
-## Getting Started
+A React-based web application for browsing and booking livestock (cows) for **Qurbani Eid**. Users can explore featured animals, learn about top breeds and their prices, and read essential Qurbani tips — all in one place.
 
-First, run the development server:
+🔗 **Live Site:** [https://assignment-8-five-blue.vercel.app/](https://assignment-8-five-blue.vercel.app/)
+
+---
+
+## 📸 Screenshot
+
+<img width="1839" height="4663" alt="screencapture-assignment-8-five-blue-vercel-app-2026-05-01-22_15_43" src="https://github.com/user-attachments/assets/778e03e0-2364-4ff8-8f09-5f6bd84b52d8" />
+
+
+---
+
+## ✨ Key Features
+
+- 🏠 **Banner / Hero Section** – Eye-catching hero with a "Browse All Cows" CTA button
+- 🐮 **Featured Cows** – Grid of featured livestock with images, breed name, size category, and View Details button
+- 🏆 **Top Breeds** – Highlights popular breeds (Local Deshi, Friesian, Brahman) with pricing
+- 📋 **Qurbani Tips** – Informational section with Islamic guidelines for a valid Qurbani
+- 🔐 **Auth Pages** – Login and Register pages accessible from the navbar
+- 📄 **All Animals Page** – Full listing of available livestock
+- 👤 **My Profile Page** – User profile route
+- 🦶 **Footer** – About info, social links, and contact details
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js | React framework (SSR, routing, performance) |
+| React | Frontend UI library |
+| React Router DOM | Client-side routing |
+| Hero UI | Component library |
+| React Icons | Icon set |
+| Gravity Icons | Additional icons |
+| Animate.css | CSS animations |
+| Vercel | Deployment |
+
+---
+
+## 📦 NPM Packages Used
+
+```bash
+npm install react-router-dom
+npm install @heroui/react
+npm install react-icons
+npm install animate.css
+```
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx
+│   ├── Banner.jsx
+│   ├── FeaturedCows.jsx
+│   ├── TopBreeds.jsx
+│   ├── QurbaniTips.jsx
+│   └── Footer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── AllAnimals.jsx
+│   ├── MyProfile.jsx
+│   ├── Login.jsx
+│   └── Register.jsx
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/assignment-8.git
+cd assignment-8
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Build for Production
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This project is deployed on **Vercel**. Any push to the main branch automatically triggers a new deployment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👨‍💻 Author
 
-## Deploy on Vercel
+**Salman**
+- Email: salmanibnriyaj@gmail.com
+- Yahoo: salmanibnriyaj@yahoo.com
+- WhatsApp: +8801894692543
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+This project was created as **Assignment #8** for educational purposes.
